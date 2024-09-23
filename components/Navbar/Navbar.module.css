@@ -1,22 +1,26 @@
 .container {
     display: flex;
     align-items: center;
-    /*vertically*/
-}
-
-.container img {
+    justify-content: space-between;
+  }
+  
+  .container img {
     width: 1.2rem;
     height: 1.3rem;
-    display: inline
-}
-
-.container ul {
-    display: inline;
+  }
+  
+  .container ul {
+    display: flex;
+    list-style: none;
     margin: 0;
-}
-
-.container ul li {
-    display: inline;
-    padding: 0.8em;
+    padding: 0;
+    flex-grow: 1;
+    position: relative; /* Use relative positioning instead of absolute */
+    right: 0;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  }
+  
+  .container ul li {
+    padding: 1em;
     font-size: 0.2em;
-}
+  }
